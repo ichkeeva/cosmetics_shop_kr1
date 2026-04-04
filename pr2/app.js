@@ -1,87 +1,75 @@
-// Подключение Express
 const express = require('express');
 const app = express();
 const port = 3000;
 
-// Middleware для парсинга JSON
 app.use(express.json());
 
-// База данных товаров (магазин косметики)
 let products = [
-    { id: 1, name: "Увлажняющий крем с гиалуроновой кислотой", price: 1890 },
+    { id: 1, name: "Увлажняющий крем", price: 1890 },
     { id: 2, name: "Сыворотка с витамином С", price: 2450 },
-    { id: 3, name: "Очищающая пенка для умывания", price: 890 },
-    { id: 4, name: "Тоник для лица с розой", price: 750 },
-    { id: 5, name: "Ночная маска для восстановления", price: 1650 }
+    { id: 3, name: "Очищающая пенка", price: 890 },
+    { id: 4, name: "Тоник для лица", price: 750 },
+    { id: 5, name: "Ночная маска", price: 1650 }
 ];
 
-// ======== МАРШРУТЫ (CRUD операции) ========
-
-// Главная страница
-app.get('/', (req, res) => {
-    res.send('Добро пожаловать в API магазина косметики!');
+// GET все товары
+app.get('/products', (req, res) => {
+    res.json(products);
 });
 
-// CREATE - Добавить новый товар (POST)
+// GET товар по ID
+app.get('/products/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+    const product = products.find(p => p.id === id);
+    if (product) {
+        res.json(product);
+    } else {
+        res.status(404).json({ error: "Товар не найден" });
+    }
+});
+
+// POST создать товар
 app.post('/products', (req, res) => {
     const { name, price } = req.body;
-    
     const newProduct = {
         id: Date.now(),
         name: name,
         price: price
     };
-    
     products.push(newProduct);
     res.status(201).json(newProduct);
 });
 
-// READ - Получить все товары (GET)
-app.get('/products', (req, res) => {
-    res.json(products);
-});
-
-// READ - Получить товар по ID (GET)
-app.get('/products/:id', (req, res) => {
+// PATCH обновить товар (частично)
+app.patch('/products/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const product = products.find(p => p.id === id);
     
-    if (product) {
-        res.json(product);
-    } else {
-        res.status(404).json({ error: 'Товар не найден' });
+    if (!product) {
+        return res.status(404).json({ error: 'Товар не найден' });
     }
-});
-
-// UPDATE - Обновить товар (PUT)
-app.put('/products/:id', (req, res) => {
-    const id = parseInt(req.params.id);
-    const { name, price } = req.body;
-    const product = products.find(p => p.id === id);
     
-    if (product) {
-        product.name = name;
+    const { price } = req.body;
+    if (price !== undefined) {
         product.price = price;
-        res.json(product);
-    } else {
-        res.status(404).json({ error: 'Товар не найден' });
     }
+    
+    res.json(product);
 });
 
-// DELETE - Удалить товар (DELETE)
+// DELETE удалить товар
 app.delete('/products/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const index = products.findIndex(p => p.id === id);
     
-    if (index !== -1) {
-        products.splice(index, 1);
-        res.status(204).send();
-    } else {
-        res.status(404).json({ error: 'Товар не найден' });
+    if (index === -1) {
+        return res.status(404).json({ error: 'Товар не найден' });
     }
+    
+    products.splice(index, 1);
+    res.status(204).send();
 });
 
-// Запуск сервера
 app.listen(port, () => {
     console.log(`Сервер запущен на http://localhost:${port}`);
 });
