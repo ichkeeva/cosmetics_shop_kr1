@@ -40,6 +40,8 @@ export default function ProductForm({ product, onSave, onClose }) {
                         onChange={e => setFormData({...formData, stock: e.target.value})} required />
                     <input type="number" placeholder="Рейтинг" value={formData.rating}
                         onChange={e => setFormData({...formData, rating: e.target.value})} step="0.1" />
+                    <input type="text" placeholder="URL картинки" value={formData.image}
+    onChange={e => setFormData({...formData, image: e.target.value})} />
                     <div className="modal-actions">
                         <button type="button" onClick={onClose}>Отмена</button>
                         <button type="submit">Сохранить</button>

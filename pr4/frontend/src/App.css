@@ -58,10 +58,9 @@ body {
     margin-bottom: 12px;
 }
 
-.product-card p {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 16px;
+.product-card {
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .details {
@@ -144,4 +143,14 @@ body {
 .loading {
     text-align: center;
     padding: 50px;
+}
+.product-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin: 0 auto 15px auto;
+    display: block;
 }

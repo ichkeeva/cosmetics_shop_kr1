@@ -1,8 +1,21 @@
 import React from 'react';
 
 export default function ProductCard({ product, onEdit, onDelete }) {
+    // Формируем правильный URL для картинки
+    const imageUrl = product.image 
+        ? `http://localhost:3000${product.image}` 
+        : 'https://cdn-icons-png.flaticon.com/512/2991/2991109.png';
+
     return (
         <div className="product-card">
+            <img 
+                src={imageUrl}
+                alt={product.name} 
+                className="product-image"
+                onError={(e) => {
+                    e.target.src = 'https://cdn-icons-png.flaticon.com/512/2991/2991109.png';
+                }}
+            />
             <h3>{product.name}</h3>
             <span className="category">{product.category}</span>
             <p>{product.description}</p>
