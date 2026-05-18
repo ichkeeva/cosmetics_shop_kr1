@@ -1,0 +1,92 @@
+{
+  "users": [
+    {
+      "id": "8mhbVJcK",
+      "email": "ichkeeva@010rambler.ru",
+      "first_name": "Sofya",
+      "last_name": "Ichkeeva",
+      "role": "user",
+      "isActive": true,
+      "passwordHash": "$2b$10$X5MjLqjRcMUIWX/RWMRLTOy4ACgpIQz7BMXH3IUUMzNusYMQy5I5S"
+    },
+    {
+      "id": "zDOzVANI",
+      "email": "ichkeeva0106@yandex.ru",
+      "first_name": "Sofya",
+      "last_name": "Ichkeeva",
+      "role": "user",
+      "isActive": true,
+      "passwordHash": "$2b$10$izq6G5mvDb8.3AltrOZ7FOxAPRefxgmsAK3h7.wafkColdS4zF5X6"
+    },
+    {
+      "id": "PXNu45Zt",
+      "email": "ichkeeva010@rambler.ru",
+      "first_name": "Sofya",
+      "last_name": "Ichkeeva",
+      "role": "admin",
+      "isActive": true,
+      "passwordHash": "$2b$10$avJwxiDbpNIHwJbWGtKvL.QOX7fc7XCOF28Q/pZEYjP5RfsXpYPHK"
+    },
+    {
+      "id": "c52ciofh",
+      "email": "ichkeeva0106@mail.ru",
+      "first_name": "Sofya",
+      "last_name": "Ichkeeva",
+      "role": "user",
+      "isActive": true,
+      "passwordHash": "$2b$10$dZsXtNpoO6MOY74t4GQKZ.oEdv20GxrfIgFBsxdlTXkngB.Ob0RqO"
+    },
+    {
+      "id": "Z06kKfTn",
+      "email": "string",
+      "first_name": "string",
+      "last_name": "string",
+      "role": "seller",
+      "isActive": true,
+      "passwordHash": "$2b$10$CgO1gbpuuCJL4wzFSwuKSu2ON9zDnGI4JCRq5cneOFREVhySSakhq"
+    },
+    {
+      "id": "Kt9jS4Ah",
+      "email": "user@example.com",
+      "first_name": "Иван",
+      "last_name": "Иванов",
+      "role": "seller",
+      "passwordHash": "$2b$10$yKwORLS.J73p3jdw2ZYFhuFRFt3skUZDTfQode25YGKDgC6fK0fRa",
+      "isActive": true
+    },
+    {
+      "id": "i0At1kFE",
+      "email": "ichkeeva2006@mail.ru",
+      "first_name": "Sofya",
+      "last_name": "Ichkeeva",
+      "role": "user",
+      "passwordHash": "$2b$10$O/b.Ju6WvMFm441nradsPuomCr4MHHo9oEXj5rncKaPSNnHjKxYkK",
+      "isActive": true
+    },
+    {
+      "id": "Pc5p7dNV",
+      "email": "ichkeeva2006@yandex.ru",
+      "first_name": "Софья",
+      "last_name": "Ичкеева",
+      "role": "admin",
+      "passwordHash": "$2b$10$YgPItk93yCa4xYV3cLgOfewQCMtnTZVQv2pqB3gSQ1.L0rk8PcMaW",
+      "isActive": true
+    }
+  ],
+  "accessTokens": [],
+  "refreshTokens": [
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4bWhiVkpjSyIsImVtYWlsIjoiaWNoa2VldmFAMDEwcmFtYmxlci5ydSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc3MjcyOTk2LCJleHAiOjE3Nzc4Nzc3OTZ9.92VZpzvlt0P0Y4a7fBJtihA9BRn7DIUTDHafUDXNeuI",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ6RE96VkFOSSIsImVtYWlsIjoiaWNoa2VldmEwMTA2QHlhbmRleC5ydSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc3Mjc1ODMxLCJleHAiOjE3Nzc4ODA2MzF9.UF0LcmPegqmCAednkMEYHrWoYg1rSRS49-MWYFDAG9w",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4bWhiVkpjSyIsImVtYWlsIjoiaWNoa2VldmFAMDEwcmFtYmxlci5ydSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc3Mjc2MTMzLCJleHAiOjE3Nzc4ODA5MzN9.SsO1vkWojiNQ2wLzhzXwwelu9EgKBQ-mQPMr553qy-s",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJQWE51NDVadCIsImVtYWlsIjoiaWNoa2VldmEwMTBAcmFtYmxlci5ydSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NzI3NjkyMSwiZXhwIjoxNzc3ODgxNzIxfQ.OOMoPwIe_cixEEaR8UettuEyIYJ33uTF8zzvcNVZdNI",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJQWE51NDVadCIsImVtYWlsIjoiaWNoa2VldmEwMTBAcmFtYmxlci5ydSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NzI3Njk1MSwiZXhwIjoxNzc3ODgxNzUxfQ.bDPvM8eloWgUw3hkMGqKnFir-b76xAbF-8Q7mFp1BjY",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNTJjaW9maCIsImVtYWlsIjoiaWNoa2VldmEwMTA2QG1haWwucnUiLCJyb2xlIjoidXNlciIsImlhdCI6MTc3NzI3NzU0NiwiZXhwIjoxNzc3ODgyMzQ2fQ.UiTUOIut5YtmeWq5LDmuV8t5zjbsKyVOWdZLSKl99YM",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJaMDZrS2ZUbiIsImVtYWlsIjoic3RyaW5nIiwicm9sZSI6InNlbGxlciIsImlhdCI6MTc3NzI3NzY3NywiZXhwIjoxNzc3ODgyNDc3fQ.FYyqEAQKJyp7TCUss1IAZpAsn9vkbU20zglKkbzuFtY",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4bWhiVkpjSyIsImVtYWlsIjoiaWNoa2VldmFAMDEwcmFtYmxlci5ydSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzc3Mjc4MjE1LCJleHAiOjE3Nzc4ODMwMTV9.zmryHghxlM6erx74YWuaYxEmcmy2b6lLOCwfjfxEl5M",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJLdDlqUzRBaCIsImVtYWlsIjoidXNlckBleGFtcGxlLmNvbSIsInJvbGUiOiJzZWxsZXIiLCJpYXQiOjE3NzcyNzg2OTYsImV4cCI6MTc3Nzg4MzQ5Nn0.iLokuCnCoXqiQD3SFrhTzJ5ogWKJrXd0h4XmpT7R0jY",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJpMEF0MWtGRSIsImVtYWlsIjoiaWNoa2VldmEyMDA2QG1haWwucnUiLCJyb2xlIjoidXNlciIsImlhdCI6MTc3OTA5MTU5OSwiZXhwIjoxNzc5Njk2Mzk5fQ.-kYmcURc07EuaICjntcjYpPc5v2nzOJFB-Ei29K_BM4",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJQYzVwN2ROViIsImVtYWlsIjoiaWNoa2VldmEyMDA2QHlhbmRleC5ydSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3OTA5MTgxNSwiZXhwIjoxNzc5Njk2NjE1fQ.2AfPHlAxKsWv7qbi3_F65R0owEDz-fRusbjWqhxQHVs",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJQYzVwN2ROViIsImVtYWlsIjoiaWNoa2VldmEyMDA2QHlhbmRleC5ydSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3OTA5MTg1MSwiZXhwIjoxNzc5Njk2NjUxfQ.kIGqdTwm050MxWUAYQsXUTHkuLf59zrWO3jiO83vO-4",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJQYzVwN2ROViIsImVtYWlsIjoiaWNoa2VldmEyMDA2QHlhbmRleC5ydSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3OTA5MjkzMywiZXhwIjoxNzc5Njk3NzMzfQ.rgg9SZrshFnWZvLGO9JZA8t2wRsZ7GtFmrh9X4wxA_g"
+  ]
+}
